@@ -1,7 +1,7 @@
 syntax on
 
 set kscb
-set guicursor=
+" set guicursor=
 set relativenumber
 set nohlsearch
 set hidden
@@ -54,7 +54,7 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'phanviet/vim-monokai-pro'
 Plug 'vim-airline/vim-airline'
 Plug 'flazz/vim-colorschemes'
-
+Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 " Plug 'theprimeagen/vim-apm'
@@ -124,7 +124,7 @@ nnoremap <Leader>rp :resize 100<CR>
 nnoremap <Leader>ee oif err != nil {<CR>log.Fatalf("%+v\n", err)<CR>}<CR><esc>kkI<esc>
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
-
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
 " Vim with me
 nnoremap <leader>vwm :colorscheme gruvbox<bar>:set background=dark<CR>
 nmap <leader>vtm :highlight Pmenu ctermbg=gray guibg=gray
